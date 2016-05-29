@@ -8,6 +8,8 @@ If you want to have a professional trainer come onsite and take you through then
 * Martin Hinshelwood [nkdAgility's Professional DevOps with Team Services Workshop](https://nkdagility.com/training/courses/professional-devops-with-team-services-workshop/)
 * Tiago Pascoal (http://pascoal.net)
 
+Also check out the [orginal version](https://github.com/rstropek/PracticalDevOpsTraining) of this course.
+
 ## Slides and Exercises
 
 **Note that you can view the slides online at [http://nkdagility.net/practical-devops-slides](http://nkdagility.net/practical-devops-slides)[[SlidesPDF](http://nkdagility.net/practical-devops-pdf)]**.
