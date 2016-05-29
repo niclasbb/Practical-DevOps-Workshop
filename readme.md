@@ -1,11 +1,12 @@
-# Practical DevOps Training
+# Practical DevOps Workshop
 
 ## Introduction
 
 This repository and its content has been created for the training "Practical DevOps". Its content is described below. The trainings take place all over Western Europe in spring 2016. Note that the content of the repository will not be kept up to date after all the trainings took place.
 
 If you want to have a professional trainer come onsite and take you through then see:
-* [nkdAgility's Professional DevOps with Team Services Workshop](https://nkdagility.com/training/courses/professional-devops-with-team-services-workshop/)
+* Martin Hinshelwood [nkdAgility's Professional DevOps with Team Services Workshop](https://nkdagility.com/training/courses/professional-devops-with-team-services-workshop/)
+* Tiago Pascoal (http://pascoal.net)
 
 ## Slides and Exercises
 
