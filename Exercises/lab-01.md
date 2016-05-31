@@ -1,6 +1,5 @@
 # Lab 01
 
-
 ## Learnings
 
 1. Adding your code to source control
@@ -24,4 +23,3 @@
 If you have time left, you could additionally cover topics like:
 
 * Multiple Repositories per Team Project
-* 
