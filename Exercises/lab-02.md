@@ -96,7 +96,6 @@ If you have time left, you could additionally cover topics like:
 
 1. Open `http://practicaldevops-dev.azurewebsites.net/api/books` in a browser and note how you can debug the deployed version of your web app with your local Visual Studio.
 
-   
 ## Further Ideas
 
 If you have time left, you could additionally cover topics like:
@@ -111,4 +110,3 @@ If you have time left, you could additionally cover topics like:
 If you have time left, you could additionally cover topics like:
 
 * Setup an additional build agent in a VM
-
