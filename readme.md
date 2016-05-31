@@ -14,7 +14,7 @@ Also check out the [orginal version](https://github.com/rstropek/PracticalDevOps
 
 **Note that you can view the slides online at [http://nkdagility.net/practical-devops-slides](http://nkdagility.net/practical-devops-slides)[[SlidesPDF](http://nkdagility.net/practical-devops-pdf)]**.
 
-**You find the exercises of the training in the [Exercises](Exercises) folder.**
+**You find the exercises of the training in the [Exercises](/Exercises/) folder.**
 
 The training outline is available in [Excel](DevOpsPartnerTrainingOutline.xlsx) and [PDF](DevOpsPartnerTrainingOutline.pdf).
 
