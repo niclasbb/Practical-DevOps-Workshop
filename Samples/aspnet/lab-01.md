@@ -11,7 +11,7 @@
 
 ## Creating Project in Visual Studio
 
-**[[Back to Lab 01](../../lab-01.md)]**
+**[[Back to Lab 01](/Exercises/lab-01.md)]**
 
 1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. <br/>![New Web Project in VS](../../img/practicaldevops-create-empty-web-project.png)
 
@@ -104,7 +104,7 @@
 1. *Postman* is a very handy tool for testing Web APIs. You can get it here: [Postman on Chrome Web Store](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop). Install *Postman* and try the Web API.<br/>
    ![Postman](../../img/postman.png)
    
-**[[Back to Lab 01](../../lab-01.md)]**
+**[[Back to Lab 01](/Exercises/lab-01.md)]**
 
 ## Further   
 
