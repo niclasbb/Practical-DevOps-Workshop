@@ -23,7 +23,7 @@
    * Talk about RBAC and resource groups
 
 1. Add a *Storage account* named `books<yourname>dev` (replace `<yourname>` with your name to get a globally unique storage account name).<br/>
-   ![Dev Storage Account](img/dev-storage-account.png)
+   ![Dev Storage Account](/img/dev-storage-account.png)
 
 1. **Discussion points:**
    * Brief overview about different storage offerings in Azure (PaaS, IaaS)
@@ -37,7 +37,7 @@
 
 1. Use *Cloud Explorer* to create a new Blob Container named `booknametokens`.
 
-1. Upload [BookNameTokens.txt](/Samples/aspnet/assets/Exercise-2-Book-Name-Tokens/BookNameTokens.txt) into the new container.
+1. Upload [BookNameTokens.txt](/Samples/aspnet/Assets/Exercise-2-Book-Name-Tokens/BookNameTokens.txt) into the new container.
 
 1. Copy blob URL using *Cloud Explorer*.<br/>
    ![Copy Blob URL](/img/copy-blob-url.png)
