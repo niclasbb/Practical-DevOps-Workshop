@@ -121,9 +121,9 @@
 
 ## Update and Run Web Test against Azure
 
-1. Open the web test created in [exercise 2](lab-02.md).
+1. Open the web test created earlier.
 
-1. Change web server to deployment in the cloud.<br/>
+1. Change web server to deployment in the cloud created in [exercise 2](lab-02.md).<br/>
    ![Change web server URL](/img/change-to-cloud-server.png)
    
 1. Run web test to see if it succeeds for deployed version.
