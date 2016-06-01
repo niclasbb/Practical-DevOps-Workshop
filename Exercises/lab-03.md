@@ -61,7 +61,7 @@
     </Fakes>
    ```
 
-1. Copy `.cs` files from [Assets/Exercise-3-Tests](/Samples/aspnet/assets/Exercise-3-Tests) into your test project. Make yourself familiar with the two test files.
+1. Copy `.cs` files from [Assets/Exercise-3-Tests](/Samples/aspnet/Assets/Exercise-3-Tests) into your test project. Make yourself familiar with the two test files.
 
 1. **Discussion points:**
    * Short introduction into unit testing with Visual Studio
