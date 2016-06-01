@@ -116,7 +116,7 @@
 
 1. Search for the following line in `Services/NameGenerator.cs`: `var bookNameTokens = await Task.FromResult(bookNameTokensDummy);`. Describe that we have to replace the static book name tokens with a call to Blob Storage.
 
-1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](/Samples/aspnet/assets/Exercise-2-Service-Implementation/NameGenerator.cs).
+1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](/Samples/aspnet/Assets/Exercise-2-Service-Implementation/NameGenerator.cs).
 
 1. **Discussion points:**
    * Demonstrate downloading of book name tokens from Blob Storage in the debugger
