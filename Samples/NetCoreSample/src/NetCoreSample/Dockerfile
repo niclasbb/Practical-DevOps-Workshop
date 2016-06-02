@@ -1,6 +1,6 @@
 FROM microsoft/dotnet
 
-COPY ./NetCoreSample /src
+COPY . /src
 
 RUN cd /src && dotnet restore
 
