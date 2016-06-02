@@ -68,7 +68,7 @@
    * `System.ComponentModel.Composition.Registration`
    * `System.Reflection.Context`
 
-1. Copy `.cs` files from [Excercise-1-Service-Implementation](assets/Exercise-1-Service-Implementation) into your project. Note that you can overwrite `Startup.cs`.
+1. Copy `.cs` files from [Excercise-1-Service-Implementation](/Samples/aspnet/Assets/Exercise-1-Service-Implementation) into your project. Note that you can overwrite `Startup.cs`.
 
 1. **Discussion points:**
    * Code walkthrough (depth depends on existing knowledge and interests of the audience)

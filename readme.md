@@ -4,15 +4,11 @@
 
 This repository and its content has been created for the training "Practical DevOps". Its content is described below. The trainings take place all over Western Europe in spring 2016. Note that the content of the repository will not be kept up to date after all the trainings took place.
 
-If you want to have a professional trainer come onsite and take you through then see:
-* Martin Hinshelwood [nkdAgility's Professional DevOps with Team Services Workshop](https://nkdagility.com/training/courses/professional-devops-with-team-services-workshop/)
-* Tiago Pascoal (http://pascoal.net)
-
 Also check out the [orginal version](https://github.com/rstropek/PracticalDevOpsTraining) of this course.
 
 ## Slides and Exercises
 
-**Note that you can view the slides online at [http://nkdagility.net/practical-devops-slides](http://nkdagility.net/practical-devops-slides)[[SlidesPDF](http://nkdagility.net/practical-devops-pdf)]**.
+**NOTE: slides will be available at the end of the training.
 
 **You find the exercises of the training in the [Exercises](/Exercises/) folder.**
 
@@ -53,4 +49,4 @@ Attendees should already have basic knowledge about Visual Studio, .NET, C#, HTM
 You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed (detailed instructions about the necessary Visual Studio configuration will be provided) and you have access to your own Microsoft Azure subscription. If you do not have access to Visual Studio and/or a Microsoft Azure account, Microsoft will provide a limited number (first come, first served) of free Azure Passes that you can use to run a VM with Visual Studio in it. In that case you just need internet access and a remote desktop client on your laptop.
 For the labs about build- and test-automation, you need your own Visual Studio Team Services subscription (free edition available).
 
-**For details about prerequisites see [SlidesPDF](http://nkdagility.net/practical-devops-pdf). Please don't forget to bring your own laptop!**
+**For details about prerequisites see [Slides](http://rstropek.github.io/PracticalDevOpsTraining/). Please don't forget to bring your own laptop!**
