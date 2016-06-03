@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using AspNetCore1Angular2Intro.Models;
-using AspNetCore1Angular2Intro.Services;
-//using Microsoft.Extensions.OptionsModel;
 using System;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NetCoreSample.Services;
+using NetCoreSample.Models;
 
-namespace AspNetCore1Angular2Intro.Controllers
+namespace NetCoreSample.Controllers
 {
     [Route("api/[controller]")]
     public class BooksController : Controller

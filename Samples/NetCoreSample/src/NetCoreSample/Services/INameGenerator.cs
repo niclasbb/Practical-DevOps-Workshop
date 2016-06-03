@@ -1,4 +1,4 @@
-﻿namespace AspNetCore1Angular2Intro.Services
+﻿namespace NetCoreSample.Services
 {
     /// <summary>
     /// Defines the interface for name generators.

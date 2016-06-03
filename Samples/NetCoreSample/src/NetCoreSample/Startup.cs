@@ -17,7 +17,8 @@ namespace NetCoreSample
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile("hosting.json", optional: true);
 
             if (env.IsEnvironment("Development"))
             {
@@ -34,6 +35,12 @@ namespace NetCoreSample
         // This method gets called by the runtime. Use this method to add services to the container
         public void ConfigureServices(IServiceCollection services)
         {
+            // Publish options read from configuration file. With that,
+            // controllers can use ASP.NET DI to get options (see 
+            // BooksController).
+            //services.Configure<BooksDemoDataOptions>(
+            //    configuration.GetSection("booksDemoDataOptions"));
+
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 

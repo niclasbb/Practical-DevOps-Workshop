@@ -1,13 +1,14 @@
-﻿using System;
+﻿using NetCoreSample.Services;
+using System;
 using System.Text;
 using System.Threading;
 
-namespace AspNetCore1Angular2Intro.Services
+namespace NetCoreSample.Services
 {
     /// <summary>
     /// Implements a generator for dummy book names
     /// </summary>
-    public class NameGenerator : INameGenerator
+    public class NetCoreSample : INameGenerator
     {
         #region Demo data
         private readonly string[][] parts = new[]

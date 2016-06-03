@@ -1,4 +1,4 @@
-﻿namespace AspNetCore1Angular2Intro.Controllers
+﻿namespace NetCoreSample.Controllers
 {
     public class BooksDemoDataOptions
     {

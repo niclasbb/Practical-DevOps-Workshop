@@ -1,6 +1,7 @@
 FROM microsoft/dotnet
 
 COPY . /src
+#WORKDIR /src
 
 RUN cd /src && dotnet restore
 

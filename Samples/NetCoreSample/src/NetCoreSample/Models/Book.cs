@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AspNetCore1Angular2Intro.Models
+namespace NetCoreSample.Models
 {
     public class Book
     {
