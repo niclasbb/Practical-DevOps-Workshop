@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NetCoreSample.Controllers;
+using NetCoreSample.Services;
 
 namespace NetCoreSample
 {
@@ -17,8 +19,7 @@ namespace NetCoreSample
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile("hosting.json", optional: true);
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             if (env.IsEnvironment("Development"))
             {
@@ -41,15 +42,40 @@ namespace NetCoreSample
             //services.Configure<BooksDemoDataOptions>(
             //    configuration.GetSection("booksDemoDataOptions"));
 
+            services.Configure<BooksDemoDataOptions>(opt => Configuration.GetSection("booksDemoDataOptions"));
+
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
+            // Publish singleton for name generator
+            services.AddSingleton(typeof(INameGenerator), typeof(NameGenerator));
 
+            // Configure middlewares (CORS and MVC)
+            services.AddCors();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            if (env.IsDevelopment())
+            {
+                // Running in development mode -> add some dev tools
+                app.UseDeveloperExceptionPage();
+                app.UseRuntimeInfoPage();
+            }
+
+            // Just for demo purposes throw an exception if
+            // query string contains "exception"
+            //app.Use(async (context, next) =>
+            //{
+            //    if (context.Request.Query.ContainsKey("exception"))
+            //    {
+            //        throw new InvalidOperationException("Something bad happened ...");
+            //    }
+
+            //    await next();
+            //});
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
@@ -57,7 +83,20 @@ namespace NetCoreSample
 
             app.UseApplicationInsightsExceptionTelemetry();
 
-            app.UseMvc();
+            // Use file server to serve static files
+            app.UseDefaultFiles();
+            app.UseFileServer();
+
+            // Add middlewares (CORS and MVC)
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
+            app.UseMvc( routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "{controller=Home}/{action=Index}/{id?}");
+                }
+                );
         }
     }
 }

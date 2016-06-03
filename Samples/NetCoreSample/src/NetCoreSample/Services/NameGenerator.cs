@@ -8,7 +8,7 @@ namespace NetCoreSample.Services
     /// <summary>
     /// Implements a generator for dummy book names
     /// </summary>
-    public class NetCoreSample : INameGenerator
+    public class NameGenerator : INameGenerator
     {
         #region Demo data
         private readonly string[][] parts = new[]

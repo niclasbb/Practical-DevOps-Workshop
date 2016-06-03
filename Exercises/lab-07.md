@@ -9,6 +9,17 @@
 1. Editing and deploying ARM Templates in the Azure Portal
 
 
+## Deploy PracticalDevOps-Dev first
+
+1. Make sure you have pulled down https://github.com/solidifysv/Practical-DevOps-Workshop/tree/master/Samples/PracticalDevOpsRG
+1. Update the parameters at ..\Templates\PracticalDevOpsRG.parameters.json
+1. Deploy it to Azure
+1. Open Powershell as Admin at /PracticalDevOpsRG/Scripts
+1. Run Login-AzureRmAccount to login to Azure
+1. Run /Deploy-AzureResourceGroup.ps1 with the following command:
+
+.\Deploy-AzureResourceGroup.ps1 -ResourceGroupName PracticalDevOps-Dev -ResourceGroupLocation "North Europe" -TemplateFile "..\Templates\PracticalDevOpsRG.json" -TemplateParametersFile "..\Templates\PracticalDevOpsRG.parameters.json"
+
 ## Export Template
 
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
